@@ -1,12 +1,14 @@
 # CalibraMed: Calibration-Aware Neuro-Symbolic Clinical Decision Support
 
-CalibraMed is a calibration-aware neuro-symbolic framework for translating longitudinal microbiome predictions into safe, structured clinical decisions. The system integrates deep learning models with Large Language Model (LLM)-based multi-agent reasoning under strict uncertainty constraints.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mlresearcher81/CalibraMed/blob/main/notebooks/Final_Neuro_Symbolic_Pipeline_Perfect.ipynb)
+
+CalibraMed is a calibration-aware neuro-symbolic framework for translating longitudinal microbiome predictions into safe, structured clinical decisions. The system integrates deep learning models w[...]
 
 ---
 
 ## 🧠 Overview
 
-Modern microbiome models achieve strong predictive performance but remain difficult to interpret and deploy safely in clinical settings. CalibraMed addresses this challenge by introducing **Calibration-Gated Multi-Agent Arbitration (CMAA)**, a framework that constrains LLM reasoning using reliability signals derived from calibration metrics.
+Modern microbiome models achieve strong predictive performance but remain difficult to interpret and deploy safely in clinical settings. CalibraMed addresses this challenge by introducing **Calibra[...]
 
 The system combines:
 
@@ -14,6 +16,17 @@ The system combines:
 - A **calibration layer** using Local Calibration Error (LCE)
 - A **multi-agent reasoning engine** (LLM-based)
 - A **safety-first decision policy** with human-in-the-loop deferral
+
+---
+
+## 🔗 Dataset location
+
+Place the dataset zip and extracted files in the repository `data/` directory. The notebook `notebooks/Final_Neuro_Symbolic_Pipeline_Perfect.ipynb` expects the dataset at:
+
+- data/asv_interpretability_dataset_modified.zip
+- data/asv_interpretability_dataset_modified.csv (after extraction)
+
+If you prefer a different location, update the dataset path in the notebook accordingly.
 
 ---
 
@@ -67,3 +80,4 @@ CalibraMed operates in two layers:
 git clone https://github.com/your-username/CalibraMed.git
 cd CalibraMed
 pip install -r requirements.txt
+```
