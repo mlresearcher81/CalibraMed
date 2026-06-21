@@ -1,0 +1,26 @@
+# ==============================================================================
+# CALIBRAMED CORE DEPENDENCIES - ENVIRONMENT PARITY
+# ==============================================================================
+
+# Core Machine Learning Frameworks
+tensorflow>=2.15.0,<=2.20.0
+torch>=2.1.0
+numpy>=1.23.5,<2.0.0
+pandas>=1.5.3
+
+# Evaluation, Signal Scaling & Preprocessing
+scikit-learn>=1.2.2
+scipy>=1.10.1
+
+# Neuro-Symbolic Agentic Orchestration Layer
+langchain-core>=0.2.0
+langchain-huggingface>=0.0.3
+transformers>=4.41.0
+accelerate>=0.30.0
+bitsandbytes>=0.46.1
+
+# JIT Explainability Layer
+shap>=0.45.1
+
+# Production Graphics
+matplotlib>=3.7.1
