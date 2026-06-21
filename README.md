@@ -10,7 +10,7 @@ Modern microbiome models achieve strong predictive performance but remain diffic
 
 The system combines:
 
-- A **deep learning predictive backbone** (DynaBiomeX)
+- A **deep learning predictive backbone** (Established baseline)
 - A **calibration layer** using Local Calibration Error (LCE)
 - A **multi-agent reasoning engine** (LLM-based)
 - A **safety-first decision policy** with human-in-the-loop deferral
