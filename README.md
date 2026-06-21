@@ -1,4 +1,5 @@
 # CalibraMed: Calibration-Aware Neuro-Symbolic Clinical Decision Support
+
 CalibraMed is a calibration-aware neuro-symbolic framework for translating longitudinal microbiome predictions into safe, structured clinical decisions. The system integrates deep learning models with Large Language Model (LLM)-based multi-agent reasoning under strict uncertainty constraints.
 
 ---
@@ -9,7 +10,7 @@ Modern microbiome models achieve strong predictive performance but remain diffic
 
 The system combines:
 
-- A **deep learning predictive backbone** (Foundational Baseline)
+- A **deep learning predictive backbone** (DynaBiomeX)
 - A **calibration layer** using Local Calibration Error (LCE)
 - A **multi-agent reasoning engine** (LLM-based)
 - A **safety-first decision policy** with human-in-the-loop deferral
