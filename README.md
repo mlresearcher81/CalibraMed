@@ -77,7 +77,7 @@ CalibraMed operates in two layers:
 ## 🧪 Installation
 
 ```bash
-git clone https://github.com/your-username/CalibraMed.git
+git clone https://github.com/mlresearcher81/CalibraMed.git
 cd CalibraMed
 pip install -r requirements.txt
 ```
