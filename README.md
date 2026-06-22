@@ -81,3 +81,25 @@ git clone https://github.com/your-username/CalibraMed.git
 cd CalibraMed
 pip install -r requirements.txt
 ```
+---
+
+## 🔑 Llama 3.1 Access Requirements (Crucial Step)
+
+Because Meta's **Llama-3.1-8B-Instruct** is a gated model, the weights cannot be downloaded anonymously. To successfully run the notebook without encountering authentication errors, you must complete the following security and registration steps before execution:
+
+### 1. Request Meta Approval
+* Create or log into a [Hugging Face](https://huggingface.co/) account.
+* Navigate to the official [Meta-Llama-3.1-8B-Instruct model card](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct).
+* Fill out the required access request form and agree to Meta's community license. Approval is typically granted automatically within a few minutes to a few hours.
+
+### 2. Generate an Access Token
+* Once your account is granted access, navigate to your Hugging Face **Settings** > **Access Tokens**.
+* Generate a new token with **Read** permissions. Treat this token as a secure password.
+
+### 3. Configure Google Colab Secrets
+To ensure security, the pipeline does not hardcode API keys into the script. Instead, it securely pulls the key using Colab's `userdata` API.
+* Open the `Final_Neuro_Symbolic_Pipeline_Perfect.ipynb` notebook in Google Colab.
+* Click the **🔑 Secrets** icon (the key symbol) in the left-hand sidebar.
+* Click **Add new secret**. 
+* Set the Name to `HF_TOKEN` and paste your Hugging Face Read token into the Value field.
+* Toggle the **Notebook access** switch to the "on" position so the code can read the token during initialization.
